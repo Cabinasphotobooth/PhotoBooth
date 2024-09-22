@@ -898,8 +898,10 @@ section {
   }
   
   .facebook-button img {
-    width: 100%; /* Ajusta el icono al tamaño del contenedor */
+    width: 90%; /* Ajusta el icono al tamaño del contenedor */
     height: auto;
+
+      
   }
   
   /* Estilo para el botón flotante de WhatsApp */
@@ -919,7 +921,7 @@ section {
   }
   
   .whatsapp-button img {
-    width: 100%; /* Ajusta el icono al tamaño del contenedor */
+    width: 90%; /* Ajusta el icono al tamaño del contenedor */
     height: auto;
   }
   
