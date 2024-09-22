@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - PhotoBooth</title>
+    <!-- Reemplaza con la ruta de tu archivo CSS -->
+       <!-- Enlace a FontAwesome -->
+    <script src="https://kit.fontawesome.com/96ddffd9a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/Nosotros.css">
+</head>
+<body>
+    
+    <link rel="icon" type="image/jpg" href="IMG/favicoin.png"/>
+     <!-- Botón flotante redes -->
+
+<!-- Botón de Facebook flotante -->
+<a href="https://www.facebook.com/profile.php?id=61552592847922" class="facebook-button" target="_blank">
+    <img src="IMG/chat/facebook.png" alt="Facebook Chat">
+  </a>
+  
+  <!-- Botón de WhatsApp flotante -->
+  <a href="https://wa.me/5622087569?text=¡Bienvenid@s a PhotoBooth!%20Realiza tu cotización%20gustaría%20Uno de nuestros asesores se pondrá en contacto contigo%20Nombre: � Paquete a cotizar" class="whatsapp-button" target="_blank">
+    <img src="IMG/chat/whats.png" alt="WhatsApp Chat">
+  </a>
+    <!-- Contenido Principal de Nosotros -->
+    <main>
+        <section class="about-us">
+            <h1>Sobre Nosotros</h1>
+            <br>
+            <br>
+            <br>
+            <p>
+                Bienvenidos a nuestra página de "Nosotros". Aquí puedes encontrar más información sobre nuestra historia, misión, visión, y valores. 
+            </p>
+             <br>
+   
+            <p>
+                Nuestro equipo está comprometido a ofrecer los mejores servicios en nuestra industria. Contamos con una amplia experiencia y un sólido compromiso con la satisfacción del cliente.
+            </p>
+            <!-- Agrega más contenido o imágenes aquí -->
+        </section>
+    </main>
+
+    
+    <!-- Cabecera -->
+    <!-- Cabecera -->
+   <header id="header">
+    <div class="logo">
+        <img src="IMG/Logo/logo-transparente.png" alt="Logo">
+    </div>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Inicio <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="Nosotros.html">Nosotros <i class="fa-solid fa-users-line"></i></a></li>
+            <li><a href="Servicios.html">Servicios <i class="fa-solid fa-truck-fast"></i></a></li>
+            <li><a href="Contactanos.html">Contáctanos <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+</header>
+
+
+   
+
+
+    <div class="nosotros-container">
+        <!-- Sección izquierda con la imagen grande -->
+        <div class="left-section">
+            <img src="IMG/nosotros/persona.png" alt="Animación" class="animated-image" />
+        </div>
+        
+        <!-- Sección derecha con los cuadros reorganizados -->
+        <div class="right-section">
+            <div class="cuadro mision">
+                <img src="IMG/mision y vision/motivacion.png" alt="Misión Icono" />
+            </div>
+            <div class="cuadro mision-text">
+                <button id="verMisionBtn">Ver Misión</button>
+            </div>
+            <div class="cuadro vision-text">
+                <button id="verVisionBtn">Ver Visión</button>
+            </div>
+            <div class="cuadro vision">
+                <img src="IMG/mision y vision/vision-compartida.png" alt="Visión Icono" />
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para la misión -->
+    <div id="modalMision" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Misión</h2>
+            <br>
+            <br>
+            <p>Brindar experiencias únicas e inolvidables a nuestros clientes mediante el uso de tecnología innovadora y creativa en cabinas de fotografía. Nos comprometemos a capturar momentos especiales en cada evento, ofreciendo un servicio de calidad, con opciones personalizadas que incluyen cabinas 360, espejo mágico, accesorios divertidos y la impresión instantánea de fotos. Nuestro objetivo es generar recuerdos memorables que los usuarios puedan llevar consigo y compartir.</p>
+        </div>
+    </div>
+    
+    <!-- Modal para la visión -->
+    <div id="modalVision" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Visión</h2>
+            <br>
+            <br>
+            <p>Ser la empresa líder en soluciones fotográficas interactivas y de entretenimiento en eventos, reconocida por la calidad de nuestros servicios, la innovación tecnológica y la satisfacción del cliente. Aspiramos a expandir nuestra oferta de productos y servicios, consolidándonos como la primera opción en cabinas de fotografía en eventos sociales, corporativos y celebraciones, contribuyendo a crear momentos inolvidables para nuestros clientes.</p>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    
+
+    <!-- Pie de página -->
+<footer id="footer">
+    <img src="IMG/logo-footer.png" alt="Logo" style="width: 100px; margin-bottom: 20px;">
+    <p>&copy; 2024 Cabinas PhotoBooth. Todos los derechos reservados. | Ing.Miguel V - ©</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61552592847922" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://w.app/as8Xk0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+<script src="JS/script.js"></script>
+<script src="JS/Nosotros.js"></script>
+<script src="JS/Menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* Estilo para la sección Nosotros */
+
+@import url("styles.css");
+
+/* Sección Nosotros */
+.about-us {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 80px; /* Ajusta este valor según la altura de la cabecera del menú */
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.about-us p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto; /* Centra el texto en la sección */
+}
+
+/* Contenedor de secciones */
+.nosotros-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea la sección de la derecha arriba */
+    padding: 20px;
+}
+
+/* Sección izquierda */
+.left-section {
+    flex: 1;
+}
+
+/* Contenedor para centrar la imagen animada */
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: auto; /* Ajusta la altura al contenido */
+}
+
+/* Imagen animada */
+.animated-image {
+    width: 30%;
+    height: auto; /* Ajusta la altura según el ancho */
+    animation: bounce 2s infinite;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Sección derecha */
+.right-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+
+/* Cuadros de información */
+.cuadro {
+    width: 45%;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative; /* Para posicionar el texto correctamente */
+}
+
+/* Estilos para cada tipo de cuadro */
+.mision {
+    background-color: #FF4081; /* Cuadro rosa */
+}
+
+.vision {
+    background-color: #000; /* Cuadro negro */
+}
+
+/* Reorganización de los cuadros */
+.mision-text {
+    order: 1; /* Texto a la derecha del cuadro rosa */
+}
+
+.vision-text {
+    order: 2; /* Texto a la izquierda del cuadro negro */
+}
+
+.vision {
+    order: 3; /* Cuadro negro a la derecha */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para hacer el footer fijo en la parte inferior */
+#footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: footerSlideIn 1s ease-in-out;
+}
+
+#footer a {
+    color: #FF4081;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animación para el footer */
+@keyframes footerSlideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Redes Sociales en el Footer */
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #FF4081;
+}

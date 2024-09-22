@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - PhtoBooth</title>
+    <!-- Enlace a FontAwesome -->
+    <script src="https://kit.fontawesome.com/96ddffd9a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/Contactanos.css">
+
+
+</head>
+
+<body>
+
+    <link rel="icon" type="image/jpg" href="IMG/favicoin.png"/>
+
+     <!-- Cabecera -->
+   <!-- Cabecera -->
+   <header id="header">
+    <div class="logo">
+        <img src="IMG/Logo/logo-transparente.png" alt="Logo">
+    </div>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Inicio <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="Nosotros.html">Nosotros <i class="fa-solid fa-users-line"></i></a></li>
+            <li><a href="Servicios.html">Servicios <i class="fa-solid fa-truck-fast"></i></a></li>
+            <li><a href="Contactanos.html">Contáctanos <i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+</header>
+
+<!-- Espaciado adicional para evitar superposición con la cabecera -->
+<br><br><br><br><br><br>
+
+<!-- Sección de contacto -->
+<section class="contact-section">
+    <div class="form-container">
+        <h2>FORMULARIO DE COTIZACIÓN</h2>
+        <form id="contact-form">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="Correo de contacto" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Paquete para Cotizar" maxlength="250" oninput="updateWordCount()" required></textarea>
+            <p id="word-count">Limite de palabras: 250</p>
+
+            <input type="submit" id="button" value="ENVIAR MENSAJE">
+        </form>
+
+        <!-- Scripts de EmailJS -->
+        <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('49mPDz4APAbCrpOd-')
+</script>
+    </div>
+
+
+
+
+        </div>
+        <div class="info-section">
+            <h2>¿Estás interesado en nuestros paquetes? </h2>
+            <ul>
+                <li><b><p>Paquetes a la medida: </b>Elige los servicios que más te convengan.</p></li>
+                <br>
+                <li><b><p></p>Asesoramiento personalizado:</b> Estamos aquí para resolver todas tus dudas.</p></li>
+                <br>
+                <li><b><p>Respuestas rápidas:</b> Recibe tu cotización en el menor tiempo posible.</p></li>
+            </ul>
+            </p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <img src="IMG/logo-footer.png" alt="Logo" style="width: 100px; margin-bottom: 20px;">
+        <p>&copy; 2024 Cabinas PhotoBooth. Todos los derechos reservados. | Ing.Miguel V - ©</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61552592847922" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://w.app/as8Xk0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- Archivos JS -->
+    <script src="JS/script.js"></script>
+    <script src="JS/Contactanos.js"></script>
+    <script src="JS/Menu.js"></script>
+
+</body>
+
+</html>

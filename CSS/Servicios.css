@@ -1,0 +1,396 @@
+
+/* Ajuste para el banner */
+
+#banner {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 70vh; /* Altura en relación con la altura de la ventana de visualización */
+    background: url('../IMG/banner.jpeg') no-repeat center center; /* Imagen de fondo centrada */
+    background-size: cover; /* Ajustar la imagen de fondo para cubrir el banner */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 60px; /* Espacio arriba del banner para evitar superposición con la cabecera */
+    margin-bottom: 20px; /* Espacio debajo del banner */
+    display: flex; /* Flexbox para centrar el contenido verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#banner .banner-content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+#banner h1 {
+    font-size: 2.5em; /* Tamaño del texto del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+#banner p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+#banner .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff; /* Color del botón */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s;
+}
+
+#banner .cta-btn:hover {
+    background-color: #0056b3; /* Color del botón en hover */
+}
+
+    
+    /* Slider Principal */
+    .slider {
+        width: 100%;
+        height: 600px; /* Altura mínima de las imágenes */
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 100%;
+        min-width: 1920px; /* Ancho mínimo de 1920px */
+        min-height: 600px; /* Altura mínima de 600px */
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: left 0.5s ease-in-out;
+        overflow: hidden; /* Para que la imagen no se salga del contenedor */
+    
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Asegura que la imagen cubra el área del slider */
+        object-position: center; /* Centra la imagen en el contenedor */
+    }
+    .slide.active {
+        left: 0;
+    }
+
+    
+   
+  /* Estilo para el botón flotante de WhatsApp */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 20px;  /* Ajusta la distancia desde el lado izquierdo */
+    z-index: 1000; /* Asegura que el botón esté siempre visible */
+    width: 60px; /* Tamaño del botón */
+    height: 60px;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para darle efecto flotante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatsapp-button img {
+    width: 100%; /* Ajusta el icono al tamaño del contenedor */
+    height: auto;
+  }
+  
+
+
+
+  /* ---------------------------------------------------------------------------------------------------- */
+
+/* Contenedor del carrusel */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pricing-section h2 {
+    text-align: center;
+    font-size: 2em; /* Ajusta el tamaño de fuente según sea necesario */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Contenedor de las tarjetas de precios (track del carrusel) */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Agrupador de tarjetas (un grupo a la vez) */
+.carousel-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para las tarjetas en pantallas grandes */
+    gap: 20px; /* Espacio entre las tarjetas */
+    min-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo de cada tarjeta de precio */
+.price-card {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.price-card:hover {
+    box-shadow: 0 10px 18px rgba(0,0,0,0.3);
+    border-color: #FF4081;
+}
+
+/* Imagen dentro de la tarjeta */
+.price-image-container {
+    text-align: center;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.price-image {
+    width: 170px; /* Tamaño de la imagen en círculo */
+    height: 170px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border: 2px solid #ddd; /* Borde alrededor de la imagen */
+    transition: border-color 0.3s ease;
+}
+
+.price-image-container:hover .price-image {
+    border-color: #FF4081; /* Cambia el color del borde al pasar el mouse */
+}
+
+/* Estilos para la lista de precios */
+.price-list {
+    list-style: none; /* Quita el estilo de lista predeterminado */
+    padding: 0;
+    margin: 0;
+}
+
+.price-list li {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 30px; /* Espacio para la viñeta personalizada */
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s ease;
+}
+
+.price-list li:not(:last-child) {
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+
+.price-list li::before {
+    content: "\2022"; /* Viñeta personalizada (puedes usar Unicode u otros caracteres) */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px; /* Tamaño de la viñeta */
+    color: #FF4081; /* Color de la viñeta */
+    transition: color 0.3s ease;
+}
+
+.price-list li:hover {
+    color: #FF4081; /* Color del texto al pasar el mouse */
+}
+
+.price-list li:hover::before {
+    color: #FF4081; /* Color de la viñeta al pasar el mouse */
+}
+
+/* Estilo de los botones de navegación */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FF4081;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Estilo de los indicadores (viñetas) */
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background-color: #FF4081;
+}
+
+/* Estilo del botón de cotización */
+.quote-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FF4081;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quote-btn:hover {
+    background-color: #fa94b6;
+    transform: scale(1.05);
+}
+
+/* Estilo del título de la sección */
+.pricing-section h2 {
+    text-align: center; /* Centra el texto */
+    font-size: 2.5em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin: 0 0 20px 0; /* Margen inferior */
+    position: relative; /* Para posicionar el efecto de animación */
+    animation: fadeInUp 1s ease-out; /* Animación de entrada */
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel-group {
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;
+        gap: 10px;
+    }
+
+    .price-card {
+        flex: 0 0 auto; /* Tarjetas no se expanden ni se contraen */
+        width: 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+    }
+
+    .carousel-indicators .dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+}
+
+
+
+
+
+  /*--------------------------------------------------------------------------------------------------------*/
+
+
+
+  
+
+    /* Estilos para el pie de página animado */
+    #footer {
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        position: relative;
+        animation: footerSlideIn 1s ease-in-out;
+    }
+    
+    #footer a {
+        color: #FF4081;
+        text-decoration: none;
+    }
+    
+    #footer a:hover {
+        text-decoration: underline;
+    }
+    
+    @keyframes footerSlideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    /* Redes Sociales en el Footer */
+    .social-media {
+        margin: 20px 0;
+    }
+    
+    .social-media a {
+        color: white;
+        font-size: 1.5em;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .social-media a:hover {
+        color: #FF4081;
+    }
+    /* Responsividad */
+@media (max-width: 1200px) {
+    .carousel-group {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-group {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+
+    .price-card {
+        padding: 15px; /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    .price-image {
+        width: 60px; /* Tamaño más pequeño para la imagen en pantallas pequeñas */
+        height: 60px;
+    }
+
+    .price-list li {
+        font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
