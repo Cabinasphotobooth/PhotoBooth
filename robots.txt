@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /CSS/
 Disallow: /IMG/
 Sitemap: https://cabinasphotobooth.github.io/PhotoBooth/sitemap.xml
