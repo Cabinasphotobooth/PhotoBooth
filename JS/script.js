@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('#nav li');
     const header = document.getElementById('header');
     let lastScrollTop = 0;
