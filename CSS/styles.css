@@ -898,7 +898,7 @@ section {
   }
   
   .facebook-button img {
-    width: 90%; /* Ajusta el icono al tamaño del contenedor */
+    width: 100%; /* Ajusta el icono al tamaño del contenedor */
     height: auto;
 
       
@@ -921,7 +921,7 @@ section {
   }
   
   .whatsapp-button img {
-    width: 90%; /* Ajusta el icono al tamaño del contenedor */
+    width: 100%; /* Ajusta el icono al tamaño del contenedor */
     height: auto;
   }
   
