@@ -177,10 +177,10 @@
     margin: 0;
 }
 
-.price-list li {
+/*.price-list li {
     position: relative;
     padding: 10px 0;
-    padding-left: 30px; /* Espacio para la viñeta personalizada */
+    padding-left: 30px; 
     font-size: 16px;
     color: #333;
     border-bottom: 1px solid #ddd;
@@ -188,29 +188,29 @@
 }
 
 .price-list li:not(:last-child) {
-    margin-bottom: 10px; /* Espacio entre elementos de lista */
+    margin-bottom: 10px; 
 }
 
 .price-list li::before {
-    content: "\2022"; /* Viñeta personalizada (puedes usar Unicode u otros caracteres) */
+    content: "\2022"; 
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 30px; /* Tamaño de la viñeta */
-    color: #FF4081; /* Color de la viñeta */
+    font-size: 30px; 
+    color: #FF4081; 
     transition: color 0.3s ease;
 }
 
 .price-list li:hover {
-    color: #FF4081; /* Color del texto al pasar el mouse */
+    color: #FF4081;
 }
 
 .price-list li:hover::before {
-    color: #FF4081; /* Color de la viñeta al pasar el mouse */
+    color: #FF4081; 
 }
 
-/* Estilo de los botones de navegación */
+
 .prev-btn, .next-btn {
     position: absolute;
     top: 50%;
@@ -233,7 +233,7 @@
     right: 10px;
 }
 
-/* Estilo de los indicadores (viñetas) */
+
 .carousel-indicators {
     text-align: center;
     margin-top: 10px;
@@ -251,6 +251,45 @@
 
 .carousel-indicators .dot.active {
     background-color: #FF4081;
+}*/
+/* Estilo de los botones de navegación */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FF4081;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.prev-btn {
+    left: 15px; /* Ajusta según el espaciado deseado */
+}
+
+.next-btn {
+    right: 15px; /* Ajusta según el espaciado deseado */
+}
+
+/* Estilo de los indicadores (viñetas) */
+.carousel-indicators {
+    text-align: center;
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior para separación */
+}
+
+.carousel-indicators .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 8px; /* Espaciado entre viñetas */
+    cursor: pointer;
 }
 
 /* Estilo del botón de cotización */
